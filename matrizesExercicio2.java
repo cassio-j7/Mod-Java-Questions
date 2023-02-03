@@ -18,7 +18,7 @@ public class matrizesExercicio2 {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner (System.in);
 		
-		System.out.println("Quantas linhas deve ter a matri?");
+		System.out.println("Quantas linhas deve ter a matriz?");
 		int M = sc.nextInt();
 		
 		System.out.println("Quantas colunas deve ter matriz?");
@@ -26,7 +26,7 @@ public class matrizesExercicio2 {
 		
 		double[][] numeros = new double[M][N];
 		
-		System.out.println("Digite os elementos da matriz ");
+		System.out.println("Digite os elementos da matriz: ");
 			for( int i = 0; i < M; i++) {
 				for (int j = 0; j < N; j++) {
 					numeros[i][j] = sc.nextDouble();
@@ -34,7 +34,7 @@ public class matrizesExercicio2 {
 			}
 			
 		System.out.println("A ordem da matriz é de "+M+"x+"+N+". Seus /n"
-				+ "são: ");
+				+ "elementos são: ");
 			for(int i = 0; i < M; i++) {
 				for (int j = 0; j < N; j++) {
 					System.out.print(numeros[i][j]+" ");
